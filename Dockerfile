@@ -1,4 +1,4 @@
-FROM rust:1.43-buster AS binarybuilder
+FROM rust:1.43.1-buster AS binarybuilder
 RUN apt-get update && apt-get install git
 RUN rustup component add rustfmt
 RUN git clone https://github.com/toshi-search/Toshi toshi
